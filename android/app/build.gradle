@@ -1,5 +1,9 @@
 apply plugin: "com.android.application"
 apply plugin: "com.facebook.react"
+apply plugin: "com.google.gms.google-services"
+
+Project background_geolocation = project(':react-native-background-geolocation')
+apply from: "${background_geolocation.projectDir}/app.gradle"
 
 import com.android.build.OutputFile
 
@@ -149,6 +153,12 @@ android {
 }
 
 dependencies {
+       implementation project(':react-native-background-geolocation')
+   implementation project(':react-native-background-fetch')
+    implementation 'com.transistorsoft:tslocationmanager:+'
+    implementation platform('com.google.firebase:firebase-bom:31.2.3')
+    implementation 'com.google.firebase:firebase-analytics'
+
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
 
