@@ -38,7 +38,8 @@ Install libs
 - pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse/Permission-LocationWhenInUse.podspec"
 
 3. in infoplist
- <img width="463" alt="image" src="https://user-images.githubusercontent.com/113431777/231693945-034198eb-889f-472d-be61-7baf2038f56e.png">
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/113431777/231694162-ba923ea0-aebe-460e-8d5f-10443069d6cd.png">
+
 
   - <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
   <string>This app needs access to your location.</string>
