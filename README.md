@@ -38,7 +38,7 @@ Install libs
 - pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse/Permission-LocationWhenInUse.podspec"
 
 3. in infoplist
-  <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+  - <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
   <string>This app needs access to your location.</string>
   <key>NSLocationAlwaysUsageDescription</key>
   <string>This app needs access to your location.</string>
