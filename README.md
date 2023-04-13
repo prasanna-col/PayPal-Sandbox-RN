@@ -24,8 +24,8 @@ Install libs
 
 ## for iOS
 1. npm: react-native-permission
-    Add following code at package.json
-     "reactNativePermissionsIOS": [
+    - Add following code at package.json
+    - "reactNativePermissionsIOS": [
         "AppTrackingTransparency",
         "LocationAccuracy",
         "LocationAlways",
@@ -33,9 +33,9 @@ Install libs
         ],
         
 2. in podfile 
-permissions_path = '../node_modules/react-native-permissions/ios'
-pod 'Permission-LocationAlways', :path => "#{permissions_path}/LocationAlways/Permission-LocationAlways.podspec"
-pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse/Permission-LocationWhenInUse.podspec"
+- permissions_path = '../node_modules/react-native-permissions/ios'
+- pod 'Permission-LocationAlways', :path => "#{permissions_path}/LocationAlways/Permission-LocationAlways.podspec"
+- pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse/Permission-LocationWhenInUse.podspec"
 
 3. in infoplist
   <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
